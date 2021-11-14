@@ -1,0 +1,165 @@
+/* || General setup */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    background-color: rgb(255, 250, 242);
+}
+
+body {
+    width: 70%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* || typography */
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #202729;
+}
+
+p,
+input,
+li {
+    font-family: 'Montserrat', sans-serif;
+    color: #202729;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+    color: #616161;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #616161;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+
+/* || header layout */
+
+header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
+    padding: 1%;
+}
+
+.title {
+    flex: 5;
+    text-decoration: none;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+header img.cropped {
+    width: auto;
+    display: block;
+    border-radius: 50%;
+    height: 125px;
+}
+
+nav {
+    height: 50px;
+    flex: 100%;
+    display: flex;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+nav a,
+nav span {
+    display: flex;
+    flex: 2;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+
+/* || main layout */
+
+main {
+    display: flex;
+}
+
+article,
+section {
+    flex: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+aside {
+    flex: 1;
+    margin-left: 10px;
+    padding: 1%;
+}
+
+aside a {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+aside img {
+    max-width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+}
