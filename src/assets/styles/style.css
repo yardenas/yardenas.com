@@ -10,11 +10,11 @@ body {
 
 html {
     font-size: 10px;
-    background-color: rgb(255, 250, 242);
+    background-color: rgb(255, 252, 250);
 }
 
 body {
-    width: 70%;
+    width: 50%;
     min-width: 800px;
     margin: 0 auto;
 }
@@ -32,7 +32,6 @@ h3 {
 }
 
 p,
-input,
 li {
     font-family: 'Montserrat', sans-serif;
     color: #202729;
@@ -45,19 +44,35 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    text-align: center;
     color: #616161;
+    border-bottom: 2px solid #375e97;
 }
 
 h3 {
     font-size: 2.2rem;
-    color: #616161;
+    color: #424242;
 }
 
 p,
 li {
     font-size: 1.6rem;
     line-height: 1.5;
+}
+
+p a {
+    color: #375e97
+}
+
+p a:link {
+    text-decoration: none;
+}
+
+p a:visited {
+    color: #375e97
+}
+
+p a:hover {
+    text-decoration: underline;
 }
 
 
@@ -82,6 +97,10 @@ section {
 
 .title {
     flex: 5;
+    padding: 0em;
+    margin-bottom: 5em;
+    margin-left: 13em;
+    margin-right: 13em;
     text-decoration: none;
 }
 
@@ -127,6 +146,16 @@ nav span {
     text-decoration: none;
     position: relative;
     color: black;
+}
+
+#where-to-find-me img {
+    max-height: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#where-to-find-me {
+    text-align: center;
 }
 
 

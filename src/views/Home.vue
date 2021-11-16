@@ -2,44 +2,36 @@
   <div class="home">
     <main>
       <article>
-        <h3>Hello!</h3>
+        <h2>Hello!</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
-          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
-          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
-          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
-          congue enim, ut porta lorem lacinia consectetur.
-        </p>
-
-        <h3>Subsection</h3>
-
-        <p>
-          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
-          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
-          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+          I am a computer science master's degree student at <a href="https://ethz.ch/en.html"> ETH Zurich</a>.
+          I am interested in understanding how computers can learn to solve complex tasks through interaction with their surroundings.
         </p>
 
         <p>
-          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
-          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
-          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+          I also think that dynamics and <a href="https://en.wikipedia.org/wiki/Orders_of_magnitude_(length)">human-scale</a> mechanics are cool, so I'm
+          a <a href="https://www.technion.ac.il/en/home-2/">mechanical engineer</a> by training as well.
         </p>
-
-        <h3>Another subsection</h3>
-
         <p>
-          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
-          soclis natoque penatibus et manis dis parturient montes, nascetur
-          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
-          facilisis semper ac in est.
+          Other than that, I dig <em>most</em> types of <a href="https://open.spotify.com/user/2sw6f4s1ipwy7bqshxeoyrevn?si=22dcd514922b4eb3"> music</a> genres.
+          I used to go rock climbing and slacklining quite a-lot. One day I'll come back to it. Promise.
         </p>
 
-        <p>
-          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
-          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
-          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
-          diam iaculis velit, is fringille sem nunc vet mi.
-        </p>
+        <h2>Some work experience</h2>
+
+        <h2>Where to find me</h2>
+        <div id="where-to-find-me">
+          <a href="https://github.com/yardenas" class="find-me">
+            <img src="@/assets/icons/github.png" alt="Link to my github page">
+          </a>
+          <a href="https://www.linkedin.com/in/yardenas/" class="find-me">
+            <img src="@/assets/icons/in.png" alt="Link to my linkedin page">
+          </a>
+          <a href="https://open.spotify.com/user/2sw6f4s1ipwy7bqshxeoyrevn?si=22dcd514922b4eb3" class="find-me">
+            <img src="@/assets/icons/spotify.png"
+            alt="Link to my spotify page">
+          </a>
+        </div>
       </article>
     </main>
   </div>

@@ -3,11 +3,13 @@
     <router-link to="/" class="title">
       <h1 @click="onNameMouseClick()">Yarden As</h1>
       </router-link>
-    <img
-      src="@/assets/logo.jpg"
-      alt="A cool picture of Yarden As"
-      class="cropped"
-    />
+    <a href="https://youtu.be/Ze5kqsHfL9s">
+      <img
+        src="@/assets/logo.jpg"
+        alt="A cool picture of Yarden As"
+        class="cropped"
+      />
+    </a>
     <nav class="top-bar-nav">
       <ul>
         <li
@@ -40,6 +42,15 @@
             <span>Places</span>
           </router-link>
         </li>
+        <li
+          v-bind:style="styles.resume"
+          @mouseout="onMouseOut ('resume')"
+          @mouseover="onMouseOver ('resume')"
+        >
+          <a href="yarden-as-2021.pdf" class="top-bar-link">
+            <span>Resume</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -52,24 +63,28 @@
 <script>
 const TRANSPARENT = '#11ffee00'
 const COOL_RED = '#ff585d'
-const COOL_YELLOW = '#48a9c5'
+const COOL_BLUE = '#48a9c5'
 const COOL_GREEN = '#00af6e'
-const COOL_BLUE = '#ffcd00'
+const COOL_YELLOW = '#ffcd00'
 const COLORS = [COOL_RED, COOL_YELLOW, COOL_GREEN, COOL_BLUE]
 
 export default {
   data () {
+    const currentPage = window.location.pathname.slice(1) || 'home'
     return {
       ptr: 0,
-      activePage: 'home',
+      activePage: currentPage,
       styles: {
         home: {
-          backgroundColor: COOL_BLUE
+          backgroundColor: currentPage === 'home' ? COOL_YELLOW : TRANSPARENT
         },
         projects: {
-          backgroundColor: TRANSPARENT
+          backgroundColor: currentPage === 'projects' ? COOL_YELLOW : TRANSPARENT
         },
         places: {
+          backgroundColor: currentPage === 'places' ? COOL_YELLOW : TRANSPARENT
+        },
+        resume: {
           backgroundColor: TRANSPARENT
         }
       }
@@ -88,7 +103,9 @@ export default {
       }
     },
     onMouseClick (name) {
-      this.styles[this.activePage].backgroundColor = TRANSPARENT
+      if (name !== this.activePage) {
+        this.styles[this.activePage].backgroundColor = TRANSPARENT
+      }
       this.activePage = name
     },
     onNameMouseClick () {
