@@ -191,6 +191,7 @@ nav span {
     grid-row: 1;
     grid-column: 2;
     margin-top: 25px;
+    justify-self: right;
 }
 
 .project-description {
@@ -200,12 +201,13 @@ nav span {
     grid-column: 1;
     grid-row: 2;
     padding: 0;
-    margin: 0;
+    margin-top: -10px;
 }
 
 .project-link {
     font-family: 'Montserrat', sans-serif;   
     font-size: 1.6rem;
+    margin-top: -25px;
 }
 
 .project-link a {

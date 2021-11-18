@@ -7,6 +7,7 @@
           v-for="project in projects"
           :key="project"
           :header="project.header"
+          :year="project.year"
           :text="project.text"
           :link="project.link"
           :linkText="project.linkText"

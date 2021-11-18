@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <div class="project-header"><h3>{{ header }}</h3></div>
-    <div class="project-year">2021</div>
+    <div class="project-year">{{ year }}</div>
     <div class="project-description">
       {{ text }}
     </div>
@@ -19,6 +19,6 @@
 
 <script>
 export default {
-  props: ['header', 'text', 'link', 'linkText']
+  props: ['header', 'year', 'text', 'link', 'linkText']
 }
 </script>
