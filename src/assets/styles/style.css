@@ -158,6 +158,72 @@ nav span {
     text-align: center;
 }
 
+.location-google {
+    padding: 5px;
+    float: right; 
+    clear: right;
+}
+
+.location {
+    min-height: 275px;
+    padding: 10px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto 1fr;
+    grid-gap: 25px;
+    grid-column-gap: 30px;
+    row-gap: 0;
+}
+
+.project-header {
+    grid-row: 1;
+    grid-column: 1;
+    margin-top: 0px;
+}
+
+.project-year {
+    font-family: 'Montserrat', sans-serif;
+    color: #202729;
+    font-size: 1.6rem;
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 25px;
+}
+
+.project-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #202729;
+    font-size: 1.6rem;
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0;
+    margin: 0;
+}
+
+.project-link {
+    font-family: 'Montserrat', sans-serif;   
+    font-size: 1.6rem;
+}
+
+.project-link a {
+    color: #375e97
+}
+
+.project-link a:link {
+    text-decoration: none;
+}
+
+.project-link a:visited {
+    color: #375e97
+}
+
+.project-link a:hover {
+    text-decoration: underline;
+}
+
 
 /* || main layout */
 
@@ -171,22 +237,6 @@ section {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
-}
-
-aside {
-    flex: 1;
-    margin-left: 10px;
-    padding: 1%;
-}
-
-aside a {
-    display: block;
-    float: left;
-    width: 50%;
-}
-
-aside img {
-    max-width: 100%;
 }
 
 footer {

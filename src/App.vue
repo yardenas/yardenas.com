@@ -2,8 +2,12 @@
   <header class="top-bar">
     <router-link to="/" class="title">
       <h1 @click="onNameMouseClick()">Yarden As</h1>
-      </router-link>
-    <a href="https://youtu.be/Ze5kqsHfL9s">
+    </router-link>
+    <a
+      href="https://youtu.be/Ze5kqsHfL9s"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         src="@/assets/logo.jpg"
         alt="A cool picture of Yarden As"
@@ -14,8 +18,8 @@
       <ul>
         <li
           v-bind:style="styles.home"
-          @mouseout="onMouseOut ('home')"
-          @mouseover="onMouseOver ('home')"
+          @mouseout="onMouseOut('home')"
+          @mouseover="onMouseOver('home')"
           @click="onMouseClick('home')"
         >
           <router-link to="/" class="top-bar-link">
@@ -24,8 +28,8 @@
         </li>
         <li
           v-bind:style="styles.projects"
-          @mouseout="onMouseOut ('projects')"
-          @mouseover="onMouseOver ('projects')"
+          @mouseout="onMouseOut('projects')"
+          @mouseover="onMouseOver('projects')"
           @click="onMouseClick('projects')"
         >
           <router-link to="/projects" class="top-bar-link">
@@ -34,20 +38,25 @@
         </li>
         <li
           v-bind:style="styles.places"
-          @mouseout="onMouseOut ('places')"
-          @mouseover="onMouseOver ('places')"
+          @mouseout="onMouseOut('places')"
+          @mouseover="onMouseOver('places')"
           @click="onMouseClick('places')"
         >
           <router-link to="/places" class="top-bar-link">
-            <span>Places</span>
+            <span>Locations</span>
           </router-link>
         </li>
         <li
           v-bind:style="styles.resume"
-          @mouseout="onMouseOut ('resume')"
-          @mouseover="onMouseOver ('resume')"
+          @mouseout="onMouseOut('resume')"
+          @mouseover="onMouseOver('resume')"
         >
-          <a href="yarden-as-2021.pdf" class="top-bar-link">
+          <a
+            href="yarden-as-2021.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="top-bar-link"
+          >
             <span>Resume</span>
           </a>
         </li>
@@ -79,7 +88,8 @@ export default {
           backgroundColor: currentPage === 'home' ? COOL_YELLOW : TRANSPARENT
         },
         projects: {
-          backgroundColor: currentPage === 'projects' ? COOL_YELLOW : TRANSPARENT
+          backgroundColor:
+            currentPage === 'projects' ? COOL_YELLOW : TRANSPARENT
         },
         places: {
           backgroundColor: currentPage === 'places' ? COOL_YELLOW : TRANSPARENT
