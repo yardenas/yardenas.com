@@ -76,7 +76,8 @@ const COLORS = [COOL_RED, COOL_YELLOW, COOL_GREEN, COOL_BLUE]
 
 export default {
   data () {
-    const currentPage = window.location.pathname.slice(1) || 'home'
+    const paths = window.location.pathname.split('/')
+    const currentPage = paths[paths.length - 1] || 'home'
     return {
       ptr: 0,
       activePage: currentPage,

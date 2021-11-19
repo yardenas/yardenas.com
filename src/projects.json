@@ -8,7 +8,7 @@
     },
     {
         "header": "Human Motion Prediction",
-        "text": "Using recurrent neural networks to predict the motion of 15 human activities.",
+        "text": "Using recurrent neural networks to predict the motion of 15 different human activities.",
         "link": "pdf/machine-perception.pdf",
         "linkText": "pdf",
         "year": 2020

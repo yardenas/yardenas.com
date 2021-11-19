@@ -5,9 +5,14 @@ set -e
 npm run build
 # navigate into the build output directory
 cd dist
+
+scp index.html 404.html
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
-
+git init
+git checkout -b gh-pages
+git add -A
 git commit -m 'deploy'
-git push -f origin master:gh-pages
+git remote add origin git@github.com:yardenas/yardenas.com.git
+git push -f origin gh-pages
 cd -
