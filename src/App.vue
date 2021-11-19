@@ -52,7 +52,7 @@
           @mouseover="onMouseOver('resume')"
         >
           <a
-            href="yarden-as-2021.pdf"
+            href="pdf/yarden-as-2021.pdf"
             target="_blank"
             rel="noopener noreferrer"
             class="top-bar-link"

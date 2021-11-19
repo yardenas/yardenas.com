@@ -11,7 +11,7 @@
         target="_blank"
         rel="noopener noreferrer"
       >
-      {{ linkText }}
+      [{{ linkText }}]
       </a>
     </div>
   </div>

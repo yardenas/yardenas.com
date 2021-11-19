@@ -7,17 +7,24 @@
         "year": 2021
     },
     {
-        "header": "DLAD",
-        "text": "ksklslks sldkjf lkslksdlkj sldkjslkdjfs lksdlkfjsdflkjsdf lks lkjs slkj lkjs dlks lkjfsdljk dlks lkjfsdljk dlks lkjfsdljk dlks lkjfsdljk dlks lkjfsdljk dlks lkjfsdljk dlks lkjfsdljk dlks",
-        "link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172913.403486789!2d8.396633992947804!3d47.37736967444367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2zWsO8cmljaA!5e0!3m2!1sen!2sch!4v1637259069195!5m2!1sen!2sch",
-        "linkText": "bulbul",
+        "header": "Human Motion Prediction",
+        "text": "Using recurrent neural networks to predict the motion of 15 human activities.",
+        "link": "pdf/machine-perception.pdf",
+        "linkText": "pdf",
+        "year": 2020
+    },
+    {
+        "header": "Visual Multitask Prediction for Autonomous Driving",
+        "text": "Developed a convolutional neural network model for depth estimation and class segmentation from RGB images.",
+        "link": "pdf/dlad.pdf",
+        "linkText": "pdf",
         "year": 2020
     },
     {
         "header": "Dynamics Analysis of a Rolling Disk",
-        "text": "slslslsls",
-        "link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172913.403486789!2d8.396633992947804!3d47.37736967444367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b9749bea219%3A0xe66e8df1e71fdc03!2zWsO8cmljaA!5e0!3m2!1sen!2sch!4v1637259069195!5m2!1sen!2sch",
-        "linkText": "texlklkkllklklklklkt",
+        "text": "I was always curious why a wheels/coins fall so easily while standing still, but are so stable while rolling. So I did a brief stability analysis.",
+        "link": "https://github.com/yardenas/Rolling-Disk",
+        "linkText": "github",
         "year": 2018
     }
 ]
