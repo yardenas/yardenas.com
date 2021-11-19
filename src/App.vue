@@ -57,16 +57,13 @@
             rel="noopener noreferrer"
             class="top-bar-link"
           >
-            <span>Resume</span>
+            <span>R&eacute;sum&eacute;</span>
           </a>
         </li>
       </ul>
     </nav>
   </header>
   <router-view />
-  <footer>
-    <p>©Copyright 2050 by nobody. All rights reversed.</p>
-  </footer>
 </template>
 
 <script>
@@ -105,7 +102,10 @@ export default {
       if (name !== this.activePage) {
         this.styles[name].backgroundColor = TRANSPARENT
       }
-      this.ptr = (this.ptr + 1) % COLORS.length
+      this.incrementPtr()
+      if (COLORS[this.ptr] === this.styles[this.activePage].backgroundColor) {
+        this.incrementPtr()
+      }
     },
     onMouseOver (name) {
       if (name !== this.activePage) {
@@ -121,6 +121,9 @@ export default {
     onNameMouseClick () {
       this.onMouseClick('home')
       this.styles.home.backgroundColor = COLORS[this.ptr]
+    },
+    incrementPtr () {
+      this.ptr = (this.ptr + 1) % COLORS.length
     }
   }
 }

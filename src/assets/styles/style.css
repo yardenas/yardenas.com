@@ -75,6 +75,10 @@ p a:hover {
     text-decoration: underline;
 }
 
+q {
+    font-style: italic;
+}
+
 
 /* || header layout */
 
@@ -148,6 +152,29 @@ nav span {
     color: black;
 }
 
+
+
+
+/* || main layout */
+
+main {
+    display: flex;
+}
+
+article,
+section {
+    flex: 4;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+/* Components */
+
 #where-to-find-me img {
     max-height: 100px;
     margin-left: 25px;
@@ -162,11 +189,21 @@ nav span {
     padding: 5px;
     float: right; 
     clear: right;
+    margin-left: 20px;
+    margin-top: -15px;
 }
 
 .location {
     min-height: 275px;
     padding: 10px;
+}
+
+.location p img {
+    float: left;
+    clear: both;
+    margin-top: 5px;
+    height: 225px;
+    width: 300px;
 }
 
 .project {
@@ -224,23 +261,4 @@ nav span {
 
 .project-link a:hover {
     text-decoration: underline;
-}
-
-
-/* || main layout */
-
-main {
-    display: flex;
-}
-
-article,
-section {
-    flex: 4;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 300;
-}
-
-footer {
-    margin-top: 10px;
 }

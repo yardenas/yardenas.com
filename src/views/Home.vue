@@ -89,7 +89,7 @@
             rel="noopener noreferrer"
             >Prof. Andreas Krause</a
           >. I work on developing algorithms that can enable computers to learn
-          complex tasks through interaction, while adhering to human determined
+          complex tasks through interaction, while adhering to human defined
           safety restrictions.
         </p>
 
@@ -138,6 +138,17 @@
           >
             <img
               src="@/assets/icons/spotify.png"
+              alt="Link to my spotify page"
+            />
+          </a>
+          <a
+            href="mailto:yardas@student.ethz.ch"
+            class="find-me"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="@/assets/icons/email.png"
               alt="Link to my spotify page"
             />
           </a>
