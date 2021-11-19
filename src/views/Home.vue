@@ -109,7 +109,9 @@
             >Tel-Aviv</a
           >
           based robotics start-up company. More than it is a company it is also
-          a family.
+          a family. I worked there for 3.5 years, both remotly from Zurich and
+          from Tel-Aviv. During this time I had the chance to develop a whole
+          range of algorithms for robots: path planning, localization and mapping and people tracking.
         </p>
 
         <h2>Where to find me</h2>
@@ -147,10 +149,7 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src="@/assets/icons/email.png"
-              alt="Link to my spotify page"
-            />
+            <img src="@/assets/icons/email.png" alt="Link to my spotify page" />
           </a>
         </div>
       </article>
