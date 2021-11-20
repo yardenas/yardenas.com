@@ -4,8 +4,8 @@
     <div class="location-google">
       <iframe
         :src="link"
-        width="300"
-        height="225"
+        width="250vw"
+        height="200vh"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"

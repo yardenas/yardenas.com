@@ -1,18 +1,21 @@
 <template>
   <div class="project">
-    <div class="project-header"><h3>{{ header }}</h3></div>
-    <div class="project-year">{{ year }}</div>
-    <div class="project-description">
-      {{ text }}
+    <div class="project-header">
+      <h3>{{ header }}</h3>
     </div>
-    <div class="project-link">
+    <div class="project-metadata">
+      {{ year }}
       <a
         :href="link"
         target="_blank"
         rel="noopener noreferrer"
+        class="project-link"
       >
-      [{{ linkText }}]
+        [{{ linkText }}]
       </a>
+    </div>
+    <div class="project-description">
+      {{ text }}
     </div>
   </div>
 </template>
