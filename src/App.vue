@@ -17,37 +17,33 @@
     <nav class="top-bar-nav">
       <ul>
         <li
-          v-bind:style="styles.home"
           @mouseout="onMouseOut('home')"
           @mouseover="onMouseOver('home')"
           @click="onMouseClick('home')"
         >
           <router-link to="/" class="top-bar-link">
-            <span>Home</span>
+            <span v-bind:style="styles.home">Home</span>
           </router-link>
         </li>
         <li
-          v-bind:style="styles.projects"
           @mouseout="onMouseOut('projects')"
           @mouseover="onMouseOver('projects')"
           @click="onMouseClick('projects')"
         >
           <router-link to="/projects" class="top-bar-link">
-            <span>Projects</span>
+            <span v-bind:style="styles.projects">Projects</span>
           </router-link>
         </li>
         <li
-          v-bind:style="styles.places"
           @mouseout="onMouseOut('places')"
           @mouseover="onMouseOver('places')"
           @click="onMouseClick('places')"
         >
           <router-link to="/places" class="top-bar-link">
-            <span>Locations</span>
+            <span v-bind:style="styles.places">Locations</span>
           </router-link>
         </li>
         <li
-          v-bind:style="styles.resume"
           @mouseout="onMouseOut('resume')"
           @mouseover="onMouseOver('resume')"
         >
@@ -57,7 +53,7 @@
             rel="noopener noreferrer"
             class="top-bar-link"
           >
-            <span>R&eacute;sum&eacute;</span>
+            <span v-bind:style="styles.resume">R&eacute;sum&eacute;</span>
           </a>
         </li>
       </ul>
@@ -83,17 +79,19 @@ export default {
       activePage: currentPage,
       styles: {
         home: {
-          backgroundColor: currentPage === 'home' ? COOL_YELLOW : TRANSPARENT
+          'border-bottom-color':
+            currentPage === 'home' ? COOL_YELLOW : TRANSPARENT
         },
         projects: {
-          backgroundColor:
+          'border-bottom-color':
             currentPage === 'projects' ? COOL_YELLOW : TRANSPARENT
         },
         places: {
-          backgroundColor: currentPage === 'places' ? COOL_YELLOW : TRANSPARENT
+          'border-bottom-color':
+            currentPage === 'places' ? COOL_YELLOW : TRANSPARENT
         },
         resume: {
-          backgroundColor: TRANSPARENT
+          'border-bottom-color': TRANSPARENT
         }
       }
     }
@@ -101,27 +99,31 @@ export default {
   methods: {
     onMouseOut (name) {
       if (name !== this.activePage) {
-        this.styles[name].backgroundColor = TRANSPARENT
+        this.styles[name]['border-bottom-color'] = TRANSPARENT
       }
       this.incrementPtr()
-      if (COLORS[this.ptr] === this.styles[this.activePage].backgroundColor) {
+      if (
+        COLORS[this.ptr] === this.styles[this.activePage]['border-bottom-color']
+      ) {
         this.incrementPtr()
       }
     },
     onMouseOver (name) {
+      console.log('rrrrrrrr', this.styles[name]['border-bottom-color'])
       if (name !== this.activePage) {
-        this.styles[name].backgroundColor = COLORS[this.ptr]
+        this.styles[name]['border-bottom-color'] = COLORS[this.ptr]
       }
+      console.log('sssslsls', this.styles[name]['border-bottom-color'])
     },
     onMouseClick (name) {
       if (name !== this.activePage) {
-        this.styles[this.activePage].backgroundColor = TRANSPARENT
+        this.styles[this.activePage]['border-bottom-color'] = TRANSPARENT
       }
       this.activePage = name
     },
     onNameMouseClick () {
       this.onMouseClick('home')
-      this.styles.home.backgroundColor = COLORS[this.ptr]
+      this.styles.home['border-bottom-color'] = COLORS[this.ptr]
     },
     incrementPtr () {
       this.ptr = (this.ptr + 1) % COLORS.length

@@ -173,6 +173,11 @@ nav span {
     color: black;
 }
 
+nav span {
+    border-bottom: 0.5rem solid;
+    border-bottom-color: lightcoral;
+}
+
 @media screen and (max-width: 540px) {
     nav a,
     nav span {
