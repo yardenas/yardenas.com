@@ -226,9 +226,10 @@ section {
 .location p img {
     float: left;
     clear: both;
-    margin-top: 5px;
+    margin-top: 1rem;
     width: 30rem;
     height: auto;
+    border-radius: 2%;
 }
 
 .project {
