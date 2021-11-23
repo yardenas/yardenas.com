@@ -7,6 +7,8 @@ npm run build
 cd dist
 
 scp index.html 404.html
+
+echo "asyarden.com" >  CNAME
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
 git init
