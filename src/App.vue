@@ -109,11 +109,9 @@ export default {
       }
     },
     onMouseOver (name) {
-      console.log('rrrrrrrr', this.styles[name]['border-bottom-color'])
       if (name !== this.activePage) {
         this.styles[name]['border-bottom-color'] = COLORS[this.ptr]
       }
-      console.log('sssslsls', this.styles[name]['border-bottom-color'])
     },
     onMouseClick (name) {
       if (name !== this.activePage) {
