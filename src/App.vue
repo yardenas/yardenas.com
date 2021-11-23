@@ -60,6 +60,7 @@
     </nav>
   </header>
   <router-view />
+  <footer></footer>
 </template>
 
 <script>

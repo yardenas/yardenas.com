@@ -1,6 +1,6 @@
 /* || General setup */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:normal,bold");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,bold");
 
 html,
 body {
@@ -48,7 +48,7 @@ body {
 h1,
 h2,
 h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     color: #202729;
@@ -56,7 +56,7 @@ h3 {
 
 p,
 li {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #202729;
 }
 
@@ -80,6 +80,7 @@ p,
 li {
     font-size: 1.6rem;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 p a {
@@ -198,9 +199,8 @@ main {
 article,
 section {
     flex: 4;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: 300;
 }
 
 /* Components */
@@ -258,7 +258,7 @@ section {
 }
 
 .project-metadata {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #202729;
     font-size: 1.6rem;
     grid-row: 1 / 2;
@@ -270,13 +270,14 @@ section {
 }
 
 .project-description {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #202729;
     font-size: 1.6rem;
     grid-column: 1 / 2;
     grid-row: 2;
     padding: 0;
     margin-top: -10px;
+    font-weight: 300;
 }
 
 .project-link{
