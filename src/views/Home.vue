@@ -71,7 +71,7 @@
             >Obol</a
           >
           from its very beginning and to learn what it takes to compile a vision
-          into an real product.
+          into a real product.
         </p>
         <h3>Learning &amp; Adaptive Systems (2020 - 2021)</h3>
         <p>
