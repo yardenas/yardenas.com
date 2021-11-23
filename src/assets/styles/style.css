@@ -224,10 +224,9 @@ section {
 }
 
 .location p img {
-    float: left;
-    clear: both;
-    margin-top: 1rem;
-    width: 30rem;
+    margin-top: 2rem;
+    display: block;
+    width: 28rem;
     height: auto;
     border-radius: 2%;
 }
