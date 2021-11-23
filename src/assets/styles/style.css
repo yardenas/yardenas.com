@@ -9,7 +9,7 @@ body {
 }
 
 html {
-    font-size: 10px;
+    font-size: 13px;
     background-color: rgb(255, 252, 250);
 }
 
@@ -21,6 +21,9 @@ body {
 
 /* For Mobile */
 @media screen and (max-width: 540px) {
+    html {
+        font-size: 10px;
+    }
     body {
         width: 100%;
         font-size: 5px;
@@ -140,7 +143,6 @@ header img.cropped {
 }
 
 nav {
-    height: 50px;
     flex: 100%;
     display: flex;
 }
