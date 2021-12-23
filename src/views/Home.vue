@@ -110,7 +110,7 @@
           >
           based robotics start-up company. More than it is a company it is also
           a family. I worked there for 3.5 years, both remotly from Zurich and
-          from Tel-Aviv. During this time I had the chance to develop a whole
+          in the Tel-Aviv HQ. During this time I had the chance to develop a whole
           range of algorithms for robots: path planning, localization and mapping and people tracking.
         </p>
 

@@ -15,6 +15,6 @@ git init
 git checkout -b gh-pages
 git add -A
 git commit -m 'deploy'
-git remote add origin git@github.com:yardenas/yardenas.com.git
+git remote add origin git@github.com:yardenas/asyarden.com.git
 git push -f origin gh-pages
 cd -
